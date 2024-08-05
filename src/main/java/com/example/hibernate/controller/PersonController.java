@@ -10,8 +10,12 @@ import java.util.List;
 
 @RestController
 public class PersonController {
-    @Autowired
     private PersonRepository personRepository;
+
+    public PersonController(PersonRepository personRepository) {
+        this.personRepository = personRepository;
+    }
+
 
     @GetMapping("/persons/by-city")
     public List<Person> getPersonsByCity(String city) {
