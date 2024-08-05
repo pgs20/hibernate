@@ -1,4 +1,4 @@
-CREATE TABLE PERSONS (
+CREATE TABLE persons (
     name VARCHAR(50),
     surname VARCHAR(50),
     age INT,
@@ -7,7 +7,7 @@ CREATE TABLE PERSONS (
     PRIMARY KEY (name, surname, age)
 );
 
-INSERT INTO PERSONS (name, surname, age, phone_number, city_of_living) VALUES
+INSERT INTO persons (name, surname, age, phone_number, city_of_living) VALUES
 ('Иван', 'Иванов', 30, '123-456-7890', 'Москва'),
 ('Петр', 'Петров', 25, '098-765-4321', 'Санкт-Петербург'),
 ('Анастасия', 'Сидорова', 28, '555-555-5555', 'Екатеринбург'),
